@@ -11,7 +11,7 @@ pipeline {
     stages {
         stage('Build') { 
             steps {
-                sh 'rm -rf node_modules && npm cache clean --force && npm install' 
+                sh 'npm install' 
             }
         }
         stage('Test') {
